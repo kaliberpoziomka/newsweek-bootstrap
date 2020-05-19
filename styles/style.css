@@ -1,6 +1,9 @@
+html {
+  background: #f4f5f6;
+}
+
 body {
   font-family: "Roboto";
-  max-width: 1310px;
   margin: auto;
 }
 
@@ -73,7 +76,16 @@ main .navbar-white {
 
 main .navbar-white li {
   border-right: 1px solid rgba(136, 136, 136, 0.307);
-  font-size: 1.2rem;
+  font-size: 0.8rem;
+  list-style-type: none;
+}
+
+main .navbar-white a {
+  margin-right: 25px;
+}
+
+main .navbar-white a:hover {
+  color: #f72210 !important;
 }
 
 main .navbar-white input {
@@ -83,7 +95,76 @@ main .navbar-white input {
 }
 
 main .navbar-white img {
+  margin-top: 7px;
+  margin-right: 37px;
   width: 20px;
   height: 20px;
+}
+
+main .navbar-white::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 12px;
+  background: red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%, 0 0);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%, 0 0);
+}
+
+.main-content {
+  width: 100%;
+}
+
+.main-content h5 {
+  font-size: .9rem;
+  font-weight: 800;
+  color: #888;
+}
+
+.main-content h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.main-content h3:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #f72210;
+          text-decoration-color: #f72210;
+  cursor: pointer;
+}
+
+.image-wrap {
+  position: relative;
+}
+
+.image-wrap span {
+  padding: 5px 10px;
+  color: #f72210;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #e7e7e7;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.image-wrap img {
+  width: 100%;
+}
+
+.single-content-left p {
+  font-size: .8rem;
+}
+
+.single-content-left h3::before {
+  top: 200px;
+}
+
+.single-content-center h3::before {
+  top: 270px;
+  content: 'U.S.';
 }
 /*# sourceMappingURL=style.css.map */
