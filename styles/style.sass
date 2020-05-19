@@ -1,0 +1,78 @@
+@import "colors"
+    
+body 
+    font-family: "Roboto"
+    max-width: 1310px
+    margin: auto
+
+.nav-red
+    background: $red
+    color: white
+
+    .weather
+        font-size: 0.9rem
+        font-weight: 800
+        color: white
+
+        span:last-child
+            font-weight: 400
+
+    .sun-icon
+        width: 20px
+        height: 20px
+
+    .logo-large
+        width: 395px
+        height: 60px
+        filter: invert(1)
+
+    .logo-small
+        width: 131px
+        height: 20px
+        filter: invert(1)
+        margin-bottom: 8px
+    
+    .logo-small-div
+        width: fit-content
+        
+
+    .subscribe-btn 
+        padding: 0 10px
+        border-radius: 0
+        color: $red
+        font-family: "Roboto",sans-serif;
+        font-weight: 600
+        font-size: 17px
+        text-align: center
+    
+    .login-btn
+        @extend .subscribe-btn
+        color: white
+
+    .menu-btn
+        @extend .login-btn
+        color: rgba(255,255,255,0.6)
+
+        i
+            font-size: 30px   
+
+main 
+
+
+    .navbar-white
+        border-bottom: 1px solid $light-grey
+
+        li
+            border-right: 1px solid $light-grey
+            font-size: 1.2rem
+        
+        input
+            background: 0
+            border: 0
+            width: 70px
+        
+        img
+            width: 20px
+            height: 20px
+
+    
