@@ -1,3 +1,202 @@
+.debate-vs {
+  border-top: 4px solid #f92859;
+  border-bottom: 4px solid #1c87fb;
+}
+
+.debate-vs img {
+  height: 100%;
+  width: auto;
+  padding: 0 5px;
+  margin-right: 10px;
+}
+
+.debate-vs span, .debate-vs span small {
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: 700;
+  line-height: 1rem;
+}
+
+.debate-vs span small {
+  color: #888;
+}
+
+.debate-vs-1 {
+  height: 95px;
+  padding-bottom: 20px;
+  margin-bottom: 1px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.debate-vs-1::after {
+  position: absolute;
+  bottom: -15px;
+  left: 45%;
+  display: block;
+  content: 'VS';
+  color: white;
+  text-align: center;
+  line-height: 2rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: black;
+  z-index: 10;
+}
+
+.debate-vs-1-text {
+  max-width: 300px;
+  margin-left: 10px;
+}
+
+.debate-vs-2 {
+  height: 95px;
+  padding-top: 20px;
+  margin-top: 1px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.debate-vs-2-text {
+  max-width: 300px;
+  margin-left: 10px;
+}
+
+.opinion-table-content {
+  margin-top: 10px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  height: 85px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.opinion-table-content img {
+  height: 100%;
+  width: auto;
+  padding: 0 5px;
+  margin-right: 10px;
+}
+
+.opinion-table-content .opinion-table-text {
+  margin-left: 10px;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1rem;
+}
+
+.opinion-table-content .opinion-table-text span:first-child:hover, .opinion-table-content .opinion-table-text .debate-vs span small:first-child:hover, .debate-vs span .opinion-table-content .opinion-table-text small:first-child:hover {
+  color: #f72210;
+  cursor: pointer;
+}
+
+.opinion-table-content .opinion-table-text span:last-child, .opinion-table-content .opinion-table-text .debate-vs span small:last-child, .debate-vs span .opinion-table-content .opinion-table-text small:last-child {
+  margin-top: 10px;
+  font-size: .9rem;
+  color: #777777;
+}
+
+.opinion-table-content .opinion-table-text span:last-child small, .opinion-table-content .opinion-table-text .debate-vs span small:last-child small, .debate-vs span .opinion-table-content .opinion-table-text small:last-child small {
+  font: inherit;
+}
+
+.last-opinion-table-content {
+  border: 0;
+}
+
+.cta-wrap {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.cta-header-wrap img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 28px;
+  height: 28px;
+  margin: 10px;
+}
+
+.cta-header-wrap span, .cta-header-wrap .debate-vs span small, .debate-vs span .cta-header-wrap small {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.cta-input-button-wrap ::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cta-input-button-wrap :-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cta-input-button-wrap ::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cta-input-button-wrap ::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cta-input-button-wrap button {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.sponsored-insights-right-order-group {
+  max-width: 330px;
+  margin: auto;
+}
+
+.heroes-of-pandemic .heroes-images {
+  width: 155px;
+  height: 155px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.heroes-of-pandemic .hero-image-1 {
+  background-image: url(../images/heroes-1.jpg);
+}
+
+.heroes-of-pandemic .hero-image-2 {
+  background-image: url(../images/heroes-2.jpg);
+}
+
+.heroes-of-pandemic .hero-image-3 {
+  background-image: url(../images/heroes-3.jpg);
+}
+
+.heroes-of-pandemic h3 {
+  font-size: .9rem !important;
+  color: #888;
+}
+
+.heroes-of-pandemic span, .heroes-of-pandemic .debate-vs span small, .debate-vs span .heroes-of-pandemic small {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: .7rem !important;
+  font-weight: 800 !important;
+  color: #333 !important;
+}
+
+.culture-image-1 {
+  background-image: url(../images/travel.jpg);
+}
+
+.culture-image-2 {
+  background-image: url(../images/books.jpg);
+}
+
+.culture-image-3 {
+  background-image: url(../images/japan.png);
+}
+
 html {
   background: #f4f5f6;
 }
@@ -6,6 +205,19 @@ body {
   font-family: "Roboto";
   margin: auto;
   max-width: 1310px;
+}
+
+.subscribe-button-red {
+  border: 0;
+  background: 0;
+  padding: 0 10px;
+  border-radius: 0;
+  color: white;
+  font-family: "Roboto",sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  text-align: center;
+  background: #f72210;
 }
 
 .nav-red {
@@ -90,6 +302,8 @@ main .navbar-white .nav-list .nav-list-item {
   font-size: .8rem;
   list-style-type: none;
   margin: 0 auto;
+  padding-top: 0;
+  padding-bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,7 +311,7 @@ main .navbar-white .nav-list .nav-list-item {
       -ms-flex-pack: center;
           justify-content: center;
   justify-items: center;
-  border-right: 1px solid #888;
+  border-right: 1px solid rgba(136, 136, 136, 0.307);
 }
 
 main .navbar-white .nav-list .nav-list-item a {
@@ -167,7 +381,7 @@ h5 {
   color: #f72210;
   font-size: 1rem;
   font-weight: 600;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.75);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -190,102 +404,12 @@ h5 {
   content: 'U.S.';
 }
 
-.debate-vs {
-  border-top: 4px solid #f92859;
-  border-bottom: 4px solid #1c87fb;
+.sponsored-insight span, .sponsored-insight .debate-vs span small, .debate-vs span .sponsored-insight small {
+  color: #3581f4;
 }
 
-.debate-vs img {
-  height: 100%;
-  width: auto;
-  padding: 0 5px;
-  margin-right: 10px;
-}
-
-.debate-vs span, .debate-vs span small {
-  display: inline-block;
-  font-size: .8rem;
-  font-weight: 700;
-  line-height: 1rem;
-}
-
-.debate-vs span small {
-  color: #888;
-}
-
-.debate-vs-1 {
-  height: 95px;
-  padding-bottom: 20px;
-  margin-bottom: 1px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.debate-vs-1::after {
-  position: absolute;
-  bottom: -15px;
-  left: 45%;
-  display: block;
-  content: 'VS';
-  color: white;
-  text-align: center;
-  line-height: 2rem;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: black;
-  z-index: 10;
-}
-
-.debate-vs-1-text {
-  max-width: 300px;
-  margin-left: 10px;
-}
-
-.debate-vs-2 {
-  height: 95px;
-  padding-top: 20px;
-  margin-top: 1px;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.debate-vs-2-text {
-  max-width: 300px;
-  margin-left: 10px;
-}
-
-.opinion-table-content {
-  padding-bottom: 10px;
-  height: 85px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.opinion-table-content img {
-  height: 100%;
-  width: auto;
-  padding: 0 5px;
-  margin-right: 10px;
-}
-
-.opinion-table-content .opinion-table-text {
-  margin-left: 10px;
-  display: inline-block;
-  font-size: 1rem;
-  font-weight: 800;
-  line-height: 1rem;
-}
-
-.opinion-table-content .opinion-table-text span:first-child:hover, .opinion-table-content .opinion-table-text .debate-vs span small:first-child:hover, .debate-vs span .opinion-table-content .opinion-table-text small:first-child:hover {
-  color: #f72210;
-  cursor: pointer;
-}
-
-.opinion-table-content .opinion-table-text span:last-child, .opinion-table-content .opinion-table-text .debate-vs span small:last-child, .debate-vs span .opinion-table-content .opinion-table-text small:last-child {
-  margin-top: 10px;
-  font-size: .9rem;
-  color: #777777;
-}
-
-.opinion-table-content .opinion-table-text span:last-child small, .opinion-table-content .opinion-table-text .debate-vs span small:last-child small, .debate-vs span .opinion-table-content .opinion-table-text small:last-child small {
-  font: inherit;
+.sponsored-insight .sponsored-insight-text-frame {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 0;
 }
 /*# sourceMappingURL=style.css.map */

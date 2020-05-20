@@ -1,5 +1,7 @@
 @import "colors"
-    
+@import "right-column"
+@import "center-column"
+
 html 
     background: #f4f5f6
 
@@ -7,6 +9,18 @@ body
     font-family: "Roboto"
     margin: auto
     max-width: 1310px
+
+.subscribe-button-red
+    border: 0
+    background: 0
+    padding: 0 10px
+    border-radius: 0
+    color: white
+    font-family: "Roboto",sans-serif;
+    font-weight: 600
+    font-size: 17px
+    text-align: center
+    background: $red
 
 .nav-red
     background: $red
@@ -76,10 +90,12 @@ main
                 font-size: .8rem
                 list-style-type: none
                 margin: 0 auto
+                padding-top: 0
+                padding-bottom: 0
                 display: flex
                 justify-content: center
                 justify-items: center
-                border-right: 1px solid $h5-color
+                border-right: 1px solid $light-grey
 
             
 
@@ -142,7 +158,7 @@ h5
         color: $red
         font-size: 1rem
         font-weight: 600
-        background: rgba(255,255,255,.9)
+        background: rgba(255,255,255,0.75)
         position: absolute
         bottom: 0
         left: 0
@@ -165,96 +181,15 @@ h5
         content: 'U.S.'
 
 
-.debate-vs
-    border-top: 4px solid #f92859
-    border-bottom: 4px solid #1c87fb
-    
-    img
-        height: 100%
-        width: auto
-        padding: 0 5px
-        margin-right: 10px
 
+
+
+.sponsored-insight
     span
-        display: inline-block
-        font-size: .8rem
-        font-weight: 700
-        line-height: 1rem
-
-        small 
-            @extend span
-            color: $h5-color
-
-.debate-vs-1
-    height: 95px
-    padding-bottom: 20px
-    margin-bottom: 1px
-    border-bottom: 1px solid rgba(0,0,0,0.2)
-
-    &::after
-        position: absolute
-        bottom: -15px
-        left: 45%
-        display: block
-        content: 'VS'
-        color: white
-        text-align: center
-        line-height: 2rem
-        width: 30px
-        height: 30px
-        border-radius: 50%
-        background: black
-        z-index: 10
-
-.debate-vs-1-text
-    max-width: 300px
-    margin-left: 10px
-
-.debate-vs-2
-    height: 95px
-    padding-top: 20px
-    margin-top: 1px
-    border-top: 1px solid rgba(0,0,0,0.2)
-
-.debate-vs-2-text
-    max-width: 300px    
-    margin-left: 10px
-
-
-
-.opinion-table-content
-    padding-bottom: 10px
-    height: 85px
-    border-bottom: 1px solid rgba(0,0,0,0.2)
-
-
-    img 
-        height: 100%
-        width: auto
-        padding: 0 5px
-        margin-right: 10px
-
-
-    .opinion-table-text
-        margin-left: 10px
-
-        span
-        display: inline-block
-        font-size: 1rem
-        font-weight: 800
-        line-height: 1rem
-
-        span:first-child:hover
-            color: $red
-            cursor: pointer
-
-        span:last-child
-            margin-top: 10px
-            font-size: .9rem
-            color: #777777
-
-            small  
-                font: inherit
-
+        color: $blue
+    
+    .sponsored-insight-text-frame
+        border: 1px solid rgba(0,0,0,0.1)
+        border-top: 0
 
    
