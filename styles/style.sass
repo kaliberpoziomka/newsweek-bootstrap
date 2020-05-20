@@ -6,6 +6,7 @@ html
 body 
     font-family: "Roboto"
     margin: auto
+    max-width: 1310px
 
 .nav-red
     background: $red
@@ -64,20 +65,34 @@ main
     .navbar-white
         border-bottom: 1px solid $light-grey
 
-        ul 
-
-        li
-            border-right: 1px solid $light-grey
-            font-size: 0.8rem
+        .nav-list 
             list-style-type: none
+            display: flex
+            justify-items: stretch
 
-        a 
-            margin-right: 25px
 
-            &:hover
-                color: $red !important
+            .nav-list-item
+                flex: 1
+                font-size: .8rem
+                list-style-type: none
+                margin: 0 auto
+                display: flex
+                justify-content: center
+                justify-items: center
+                border-right: 1px solid $h5-color
+
+            
+
+                a 
+                    margin: 0 0
+        
+                    &:hover
+                        color: $red !important
+
+            
         
         input
+            margin-left: 20px
             background: 0
             border: 0
             width: 70px
@@ -87,25 +102,28 @@ main
             margin-right: 37px
             width: 20px
             height: 20px
+            cursor: pointer
 
         &::after
             content: ''
             display: block
             width: 60px
             height: 12px
-            background: red
+            background: $red
             position: absolute
             top: 0
             right: 0
             clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%, 0 0)
 
+h5 
+    font-size: .9rem
+    font-weight: 800
+    color: $h5-color
+
 .main-content
     width: 100%
 
-    h5 
-        font-size: .9rem
-        font-weight: 800
-        color: $h5-color
+
 
     h3 
         font-size: 1.2rem
@@ -124,7 +142,7 @@ main
         color: $red
         font-size: 1rem
         font-weight: 600
-        background: #e7e7e7
+        background: rgba(255,255,255,.9)
         position: absolute
         bottom: 0
         left: 0
@@ -140,9 +158,103 @@ main
     h3::before
         top: 200px
 
-.single-content-center
+.single-content-top-story
 
     h3::before
         top: 270px
         content: 'U.S.'
+
+
+.debate-vs
+    border-top: 4px solid #f92859
+    border-bottom: 4px solid #1c87fb
     
+    img
+        height: 100%
+        width: auto
+        padding: 0 5px
+        margin-right: 10px
+
+    span
+        display: inline-block
+        font-size: .8rem
+        font-weight: 700
+        line-height: 1rem
+
+        small 
+            @extend span
+            color: $h5-color
+
+.debate-vs-1
+    height: 95px
+    padding-bottom: 20px
+    margin-bottom: 1px
+    border-bottom: 1px solid rgba(0,0,0,0.2)
+
+    &::after
+        position: absolute
+        bottom: -15px
+        left: 45%
+        display: block
+        content: 'VS'
+        color: white
+        text-align: center
+        line-height: 2rem
+        width: 30px
+        height: 30px
+        border-radius: 50%
+        background: black
+        z-index: 10
+
+.debate-vs-1-text
+    max-width: 300px
+    margin-left: 10px
+
+.debate-vs-2
+    height: 95px
+    padding-top: 20px
+    margin-top: 1px
+    border-top: 1px solid rgba(0,0,0,0.2)
+
+.debate-vs-2-text
+    max-width: 300px    
+    margin-left: 10px
+
+
+
+.opinion-table-content
+    padding-bottom: 10px
+    height: 85px
+    border-bottom: 1px solid rgba(0,0,0,0.2)
+
+
+    img 
+        height: 100%
+        width: auto
+        padding: 0 5px
+        margin-right: 10px
+
+
+    .opinion-table-text
+        margin-left: 10px
+
+        span
+        display: inline-block
+        font-size: 1rem
+        font-weight: 800
+        line-height: 1rem
+
+        span:first-child:hover
+            color: $red
+            cursor: pointer
+
+        span:last-child
+            margin-top: 10px
+            font-size: .9rem
+            color: #777777
+
+            small  
+                font: inherit
+
+
+   

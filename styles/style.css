@@ -5,6 +5,7 @@ html {
 body {
   font-family: "Roboto";
   margin: auto;
+  max-width: 1310px;
 }
 
 .nav-red {
@@ -18,7 +19,7 @@ body {
   color: white;
 }
 
-.nav-red .weather span:last-child {
+.nav-red .weather span:last-child, .nav-red .weather .debate-vs span small:last-child, .debate-vs span .nav-red .weather small:last-child {
   font-weight: 400;
 }
 
@@ -74,21 +75,41 @@ main .navbar-white {
   border-bottom: 1px solid rgba(136, 136, 136, 0.307);
 }
 
-main .navbar-white li {
-  border-right: 1px solid rgba(136, 136, 136, 0.307);
-  font-size: 0.8rem;
+main .navbar-white .nav-list {
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: stretch;
 }
 
-main .navbar-white a {
-  margin-right: 25px;
+main .navbar-white .nav-list .nav-list-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: .8rem;
+  list-style-type: none;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  border-right: 1px solid #888;
 }
 
-main .navbar-white a:hover {
+main .navbar-white .nav-list .nav-list-item a {
+  margin: 0 0;
+}
+
+main .navbar-white .nav-list .nav-list-item a:hover {
   color: #f72210 !important;
 }
 
 main .navbar-white input {
+  margin-left: 20px;
   background: 0;
   border: 0;
   width: 70px;
@@ -99,6 +120,7 @@ main .navbar-white img {
   margin-right: 37px;
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 
 main .navbar-white::after {
@@ -106,7 +128,7 @@ main .navbar-white::after {
   display: block;
   width: 60px;
   height: 12px;
-  background: red;
+  background: #f72210;
   position: absolute;
   top: 0;
   right: 0;
@@ -114,14 +136,14 @@ main .navbar-white::after {
           clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%, 0 0);
 }
 
-.main-content {
-  width: 100%;
-}
-
-.main-content h5 {
+h5 {
   font-size: .9rem;
   font-weight: 800;
   color: #888;
+}
+
+.main-content {
+  width: 100%;
 }
 
 .main-content h3 {
@@ -140,12 +162,12 @@ main .navbar-white::after {
   position: relative;
 }
 
-.image-wrap span {
+.image-wrap span, .image-wrap .debate-vs span small, .debate-vs span .image-wrap small {
   padding: 5px 10px;
   color: #f72210;
   font-size: 1rem;
   font-weight: 600;
-  background: #e7e7e7;
+  background: rgba(255, 255, 255, 0.9);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -163,8 +185,107 @@ main .navbar-white::after {
   top: 200px;
 }
 
-.single-content-center h3::before {
+.single-content-top-story h3::before {
   top: 270px;
   content: 'U.S.';
+}
+
+.debate-vs {
+  border-top: 4px solid #f92859;
+  border-bottom: 4px solid #1c87fb;
+}
+
+.debate-vs img {
+  height: 100%;
+  width: auto;
+  padding: 0 5px;
+  margin-right: 10px;
+}
+
+.debate-vs span, .debate-vs span small {
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: 700;
+  line-height: 1rem;
+}
+
+.debate-vs span small {
+  color: #888;
+}
+
+.debate-vs-1 {
+  height: 95px;
+  padding-bottom: 20px;
+  margin-bottom: 1px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.debate-vs-1::after {
+  position: absolute;
+  bottom: -15px;
+  left: 45%;
+  display: block;
+  content: 'VS';
+  color: white;
+  text-align: center;
+  line-height: 2rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: black;
+  z-index: 10;
+}
+
+.debate-vs-1-text {
+  max-width: 300px;
+  margin-left: 10px;
+}
+
+.debate-vs-2 {
+  height: 95px;
+  padding-top: 20px;
+  margin-top: 1px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.debate-vs-2-text {
+  max-width: 300px;
+  margin-left: 10px;
+}
+
+.opinion-table-content {
+  padding-bottom: 10px;
+  height: 85px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.opinion-table-content img {
+  height: 100%;
+  width: auto;
+  padding: 0 5px;
+  margin-right: 10px;
+}
+
+.opinion-table-content .opinion-table-text {
+  margin-left: 10px;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1rem;
+}
+
+.opinion-table-content .opinion-table-text span:first-child:hover, .opinion-table-content .opinion-table-text .debate-vs span small:first-child:hover, .debate-vs span .opinion-table-content .opinion-table-text small:first-child:hover {
+  color: #f72210;
+  cursor: pointer;
+}
+
+.opinion-table-content .opinion-table-text span:last-child, .opinion-table-content .opinion-table-text .debate-vs span small:last-child, .debate-vs span .opinion-table-content .opinion-table-text small:last-child {
+  margin-top: 10px;
+  font-size: .9rem;
+  color: #777777;
+}
+
+.opinion-table-content .opinion-table-text span:last-child small, .opinion-table-content .opinion-table-text .debate-vs span small:last-child small, .debate-vs span .opinion-table-content .opinion-table-text small:last-child small {
+  font: inherit;
 }
 /*# sourceMappingURL=style.css.map */
