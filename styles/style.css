@@ -151,14 +151,6 @@
   margin: auto;
 }
 
-.heroes-of-pandemic .heroes-images {
-  width: 155px;
-  height: 155px;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .heroes-of-pandemic .hero-image-1 {
   background-image: url(../images/heroes-1.jpg);
 }
@@ -198,7 +190,6 @@
 }
 
 .more-stories {
-  height: 140px;
   width: 100%;
   padding: 20px 0;
 }
@@ -234,10 +225,6 @@
 .more-stories-photo {
   height: 92px;
   min-width: 92px;
-  background-image: url(../images/more-stories-1.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   margin-right: 10px;
 }
 
@@ -455,5 +442,42 @@ h5 {
 .sponsored-insight .sponsored-insight-text-frame {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-top: 0;
+}
+
+footer {
+  padding-bottom: 50px;
+  height: auto;
+  border-top: 3px solid rgba(0, 0, 0, 0.06);
+}
+
+footer .footer-up {
+  margin-top: 20px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer .footer-up svg {
+  fill: #f72210;
+  width: 250px;
+}
+
+footer .footer-up .copyright {
+  color: #444;
+}
+
+.footer-down span, .footer-down .debate-vs span small, .debate-vs span .footer-down small {
+  font-family: "Roboto" ,Arial, Helvetica, sans-serif;
+  color: #444;
+  font-size: .9rem;
+  border-right: 1px solid #99999991;
+}
+
+.footer-down .bold {
+  font-weight: 600;
+  color: #444;
+}
+
+.footer-down span:last-child, .footer-down .debate-vs span small:last-child, .debate-vs span .footer-down small:last-child {
+  border: 0;
 }
 /*# sourceMappingURL=style.css.map */
